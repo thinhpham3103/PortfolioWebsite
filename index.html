@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinh Pham - My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/55e150ded8.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <link rel = "icon" href = "images/Monogram-TP-Logo-Design-by-Greenlines-Studios1.jpg" type = "image/x-icon">
+</head>
+
+
+<body>
+    <div class="header-container">
+        <div id ="header">
+            <img src="images/Monogram-TP-Logo-Design-by-Greenlines-Studios.jpg" class="logo">
+            <div class="nav">
+                <nav>
+                    <ul id="sidemenu">
+                        <li><a href="#header-portion">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">Projects</a></li>
+                        <li><a href="#resume">Resume</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+            </div>
+        </div>
+        
+        <div id="header-portion">
+            <div class="header-text"> 
+                <p>Thinh Pham</p>
+                <h1>Software Developer</h1>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------about----------- -->
+    <div id="about">
+        <div class="about-container">
+            <div class="row">
+                <div class="col-1">
+                    <img src="images/unnamed (1).jpg">
+                </div>
+                <div class="col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello! My name is Thinh Pham <br> <br> I am currently based in Dallas, Texas and I graduated from UT Dallas with a degree in Computer Science. I focus in object-oriented programming, software/cloud back-end development, and Linux with apursuit of being a successful developer. <br> <br> My simple pleasures are video games, guitar, and coding!
+                    <div class="tabs">
+                        <p class="links active-link" onclick="opentab('Skills')">Skills</p>
+                        <p class="links" onclick="opentab('Experience')">Experience</p>
+                        <p class="links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="content active-tab" id="Skills">
+                        <ul>
+                            <li><span>C/C++/Python</span><br>Design Web/App interfaces</li>
+                            <li><span>AWS</span><br>Design Web/App interfaces</li>
+                            <li><span>Back-End development</span><br>Design Web/App interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="content" id="Experience">
+                        <ul>
+                            <li><span>May 2023 - August 2023</span><br>System Engineer Intern at LRS</li>
+                        </ul>
+                    </div>
+                    <div class="content" id="Education">
+                        <ul>
+                            <li><span>Baylor University</span><br>Chemistry (2018-2019)</li>
+                            <li><span>University of Texas at Dallas</span><br>Bachelor Degree in Computer Science (2019-2023)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------portfolio----------- -->
+    <div id="portfolio">
+        <div class="portfolio-container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/Toyota-Corporate.png">
+                    <a href="https://github.com/thinhpham3103/MARS-implementation-in-Rust"  target="_blank" rel="noopener noreferrer">
+                        <div class="layer">
+                            <h3>Toyota MARS</h3>
+                            <p>Migrated Toyota MARS emulator from C/Python to Rust</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="work">
+                    <img src="images/Capture1.png">
+                    <a href="https://github.com/thinhpham3103/FlappyTemoc"  target="_blank" rel="noopener noreferrer">
+                        <div class="layer">
+                            <h3>Flappy TEMOC</h3>
+                            <p>A 3D version of Flappy Bird but in UT Dallas mascot: TEMOC</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="work">
+                    <img src="images/unnamed (2).jpg">
+                    <a href="https://github.com/thinhpham3103/LRS-FAST-API"  target="_blank" rel="noopener noreferrer">
+                        <div class="layer">
+                            <h3>LRS FAST API</h3>
+                            <p>A Restful API for job submission</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- -------------resume----------- -->
+    <div id="resume">
+        <div class="resume-container">
+            <h1 class="sub-title"> My Resume</h1>
+            <div class="pdf">
+                <embed src="images/Thinh_Pham_Resume.pdf" width="800px" height="750px" />
+            </div>
+        </div>
+    </div>
+
+<!-- -------------contact----------- -->
+    <div id="contact">
+        <div class="contact-container">
+            <h1 class="sub-title">Contact Me</h1>
+            <div class="social-icons">
+                <a href="https://twitter.com/Thinhikins" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/thinh-pham-392025202/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/thinhikins/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/thinhpham3103" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i></a>
+            </div>
+            <form name="submit-to-google-sheet">
+                <input type="text" name="Name" placeholder="Your Name*" required>
+                <input type="email" name="Email" placeholder="Your Email*" required>
+                <textarea name="Message" rows="6" placeholder="Your Message*"></textarea>
+                <span id="msg"></span>
+                <button type="submit" name="contact_button" class="btn">Submit</button>
+                <span class="ending"> Thanks for visiting! </span>
+            </form>
+        </div>
+    </div>
+    
+<!-- Scripts -->
+    <script src="scripts.js"></script>
+
+</body>
+</html>
